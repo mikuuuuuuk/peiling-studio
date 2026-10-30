@@ -3,3 +3,17 @@
 main::before{content:"";position:fixed;z-index:1;inset:0 auto 0 0;width:44%;background:linear-gradient(90deg,#e9e5dbef,#e9e5db99 65%,#e9e5db00);pointer-events:none}@media(max-width:750px){main::before{width:100%;height:62%;inset:0 0 auto;background:linear-gradient(180deg,#e9e5dbed,#e9e5dbc9 66%,#e9e5db00)}body[data-room="0"] h1{max-width:430px}}
 
 .brand{display:flex;gap:7px;align-items:baseline;letter-spacing:-1.5px}.brand span{font-size:12px;font-weight:400;letter-spacing:-.3px;vertical-align:baseline;margin:0}
+
+/* Direct website access is primary; the 3D collection remains available. */
+#visitProject.project-primary{order:-1;display:inline-flex;align-items:center;gap:30px;font-size:12px;padding:17px 25px;border:1px solid #fffdf4;border-radius:99px;background:#fffdf0d9;color:#45523d;box-shadow:0 9px 28px #46543612;line-height:1.5}
+#visitProject.project-primary svg{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:1.3}
+#visitProject.project-primary:hover{background:#fffff4;box-shadow:0 12px 32px #46543620;transform:translateY(-2px)}
+body[data-room="1"] #mainAction,body[data-room="2"] #mainAction,body[data-room="3"] #mainAction{border:0;border-radius:0;background:none;backdrop-filter:none;box-shadow:none;padding:6px 2px;gap:12px;font-size:11px;color:#788269}
+body[data-room="1"] #mainAction svg,body[data-room="2"] #mainAction svg,body[data-room="3"] #mainAction svg{width:13px;height:13px}
+#indexPanel{width:380px}
+#indexPanel .index-project{display:flex;align-items:center;gap:12px;border-bottom:1px solid var(--line)}
+#indexPanel .index-project button{display:flex;gap:16px;align-items:center;flex:1;min-width:0;border:0;background:none;text-align:left;padding:22px 0;font-size:17px;letter-spacing:-.035em;color:inherit}
+#indexPanel .index-project a{flex:none;padding:10px 12px;min-height:38px;display:flex;align-items:center;border:1px solid #a9b69350;border-radius:99px;font-size:10px;color:#60734c;background:#fffef164;white-space:nowrap;transition:background .2s,transform .2s}
+#indexPanel .index-project a:hover{background:#fffef1;transform:translateX(2px)}
+#indexPanel .index-project button:hover{color:#7d8f51}
+@media(max-width:750px){#indexPanel{width:90%}#indexPanel .index-project button{padding:19px 0;font-size:16px;gap:12px}#indexPanel .index-project a{padding:9px 11px;font-size:9px}#visitProject.project-primary{padding:14px 21px;font-size:11px;gap:26px}.scene-actions{gap:10px}#indexToggle{min-width:106px}}
